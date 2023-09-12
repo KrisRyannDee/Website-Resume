@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body{
+    font-family: Arial;
+}
+/* --------PHONE VIEW CSS START----------- */
+/* -----------START OF NAVIGATION BAR---------- */
+.heaDer nav{
+    padding: 20px 0px 3px 0px;
+    width:100%;
+    background-color: #000000;
+}
+.heaDer nav ul{
+    display: flex;
+    list-style: none;
+}
+.heaDer nav ul li a{
+    padding: 0px 3px 0px 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white; 
+    text-decoration: underline;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    color: #fdd700;
+    border-radius: 100px;
+    box-shadow: 0px 3px 3px #f3c806;
+    text-decoration-line: underline;
+    transition: all 0.3s linear;
+}
+/* ------------END NAVIGATION BAR-------------- */
+
+/* -------------Social Medias--------- */
+.socMed .wrapper {
+    text-align: center;
+    width:fit-content;
+    height:fit-content;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px 0px 30px;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.socMed .btn {
+    background: #000000;
+    padding: 0px 5px 0px 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.socMed .btn:hover {
+    width: 33px;
+    height: 33px;
+    color: #5304ad;
+    background: #000000; 
+    border-radius: 100px;
+    box-shadow: 0px 3px 3px #f3c806;
+    transition: all 0.5s linear;
+}
+
+.lDn,.faceBook, .gHub, .YouT {
+    background: #000000;
+    border-radius: 100px;
+}
+
+.socMed .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    border-radius: 100px;
+    transition: all 0.3s linear;
+}
+
+.socMed .btn.icon:hover {
+    background: #000000;
+    border-radius: 100px;
+}
+
+.socMed .icon a {
+    background: #000000;
+    border-radius: 100px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.icon ion-icon{
+    background: #000000;
+    color: white; 
+}
+
+:root {
+    --facebook-color: #1877F2;
+    --linkedin-color: #0A66C2;
+    --github-color: #211F1F;
+    --youtube-color: #FF0000;
+}
+  
+.lDn:hover ion-icon {
+    color: var(--linkedin-color);
+}
+  
+.faceBook:hover ion-icon {
+    color: var(--facebook-color);
+}
+  
+.gHub:hover ion-icon {
+    color: var(--github-color);
+}
+  
+.YouT:hover ion-icon {
+    color: var(--youtube-color);
+} 
+/* -----End of Social Media Clickable----*/
+
+/* -------------HomeContent------------ */
+.cntnt{
+    align-items: center;
+    text-align: left;
+    padding: 5px 0px 0px 0px;
+    background-color: transparent;
+}
+
+.cntnt h1{
+    font-size: 35px;
+    color: #ffffff;
+    background-color: transparent; 
+    margin-top: 2%; 
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.cntnt span, a{
+    font-size: 35px;
+    background-color: transparent;
+    transition: all 0.5s linear;
+}
+
+.cntnt a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 10, 206); 
+    padding: 5px 5px;
+    border-style: double;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius:5px;
+}
+
+.cntnt a:hover{
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 5px;
+    cursor: pointer;
+    text-shadow: 2px 4px 5px #B43E69;
+    text-decoration: underline;
+    border-radius: 80px;
+    transition: all 0.4s linear;
+}
+
+.cntnt p{ 
+    margin-top: 5%; 
+}
+
+.Hpage span:hover{
+    font-weight: bold;
+    color: rgb(31, 38, 135);
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    text-decoration-line: underline;
+    border-radius: 80px;
+}
+
+.Hpage p{
+    background-color: transparent;
+    font-size: 20px;
+    color: #F5F5F5;
+    font-style: oblique;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.Hpage ul{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F5F5F5;
+    margin-left: -30%;
+    list-style: none;
+    text-align: left;
+}
+
+/* ------------------Phone and Email------------- */
+.Hpage ul li, .Hpage ul li ion-icon, .Hpage ul li l {
+    background-color: transparent;
+}
+
+/* ------------My Picture------- */
+.pic {
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 3px 0px 3px;
+    background-color: transparent;
+}
+
+.pic img {
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    transition: left 1s, box-shadow 0.5s;
+}
+
+.Hpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+}
+/* -------------END OF HOME PAGE-------------- */
+
+/* -------------ABOUT ME--------------- */
+ .aBoutPage {
+    background: #000000;
+    padding: 20px;
+    margin-top: -20%;
+} 
+
+ .aBoutPage h1 {
+    background-color: transparent;
+    text-align: left;
+    font-size: 24px;
+    color:  rgb(0, 10, 206); 
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.aBoutPage p{
+    width: fit-content;
+    padding: 5px 5px 5px 5px;
+    margin-left: 2%;
+    background:transparent;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: justify;
+    font-size: 18px;
+    color: #fff; 
+}
+.TechSkills ul li, .ProfSkills ul li{
+    background-color: transparent;
+    list-style:none;
+    color: #ffffff; 
+   
+}
+.TechSkills, .ProfSkills{
+    background-color: transparent;
+    color:  #38b6ff;
+}
+.TechSkills ul, .ProfSkills ul{
+    width: fit-content;
+    padding: 1%;
+    margin-left: 2%;
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+
+.aBoutPage a{
+    font-size: 25px;
+}
+
+/* -----------------Rotating proglanguanges---------------- */
+.pRoglAngpIc { 
+    display: none;
+}
+/* -------------EDUCATION SECTION------------- */
+.EducPage{
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: left;
+    padding: 5px 10px 5px 10px;
+    color:  #38b6ff;
+    background: #000000;
+}
+
+.EducPage h1{
+    font-size: 25px;
+}
+.EducPage a{
+    font-size: 28px;
+}
+
+.EducPage ul{
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.EducPage ul li{
+    width: fit-content;
+    margin-left: 20%;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    font-size: 17px;
+    list-style: none;
+}
+.cAlogo, .dLslogo, .dlslogo{
+    display: none;
+}
+
+/* -----------REFERENCE PAGE------------ */
+.REF{
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 5px 5px 5px 5px;
+    color: #ffffff;
+}
+.REF h1{
+    color: #38b6ff;
+    font-size: 30px;
+}
+.REF a{
+    font-size: 25px;
+}
+.REF ul li{
+    font-size: 20px;
+    color: white;
+}
+/* ---------------END OF CSS STYLE FOR PHONE VIEW-------------- */
+
+/* --------CSS STYLE FOR TABLET VIEW---------------- */
+@media only screen and (min-width: 768px){
+
+    .Hpage{
+        background-image: url(images/background.png);
+        box-shadow: 0px 25px 50px #000000;
+    }
+
+    .Hpage ul{
+        font-size: 20px;
+        margin-bottom: 11%;
+    }
+
+    .cntnt{
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .cntnt a{
+        font-weight: bold;
+        color: #38b6ff;
+        padding: 5px 5px;
+        cursor: pointer;
+        border-style:double;
+        text-decoration: none;
+        border-radius: 10%;
+        transition: all 0.5s linear;
+    }
+    
+    .cntnt a:hover{
+        font-weight: bold;
+        color: #fff;
+        padding: 5px 5px;
+        cursor: pointer;
+        text-shadow: 2px 4px 5px #B43E69;
+        text-decoration: underline;
+        border-radius: 80px;
+        transition: all 0.4s linear;
+    }
+    
+    .cntnt span a{
+        transition: all 0.5s linear;
+    }
+
+    .cntnt h1{
+        margin-left: -10%;
+    }
+    .cntnt h1 span{
+        font-size: 35px;
+        color: #ffffff;
+    }
+    .cntnt p{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    
+    .Hpage span:hover{
+        font-weight: bold;
+        color: #f3c806;
+    }
+    
+    .Hpage p{
+        margin-left: -10%;
+        font-size: 30px;
+        color: #F5F5F5;
+        margin-bottom: 30px;
+    }
+
+    /* -------------ABOUT ME--------------- */
+    .aBoutPage {
+        background: #000000;
+        padding: 20px;
+    }
+
+    .aBoutPage h1 {
+        font-size: 40px;
+        color: #38b6ff; 
+    }
+
+    .aBoutPage p{
+        width: 100%;
+        margin-left: 0.3%;
+
+        font-size: 25px;
+    }
+
+    .ProfSkills ul li, .TechSkills ul li{
+        background-color: transparent;
+        list-style:none;
+        font-size: 25px;
+    }
+
+    .ProfSkills, .TechSkills{
+        background-color: transparent;
+        color: #000000;
+    }
+
+    .ProfSkills ul, .TechSkills ul{
+        width: fit-content;
+        font-size: 30px;
+        color: #38b6ff;
+
+    }
+
+    /* -------------EDUCATION SECTION------------- */
+    .EducPage{
+        text-align: left;
+        color:  #38b6ff;
+        background-color: transparent;
+    }
+
+    .EducPage h1{
+        background-color: transparent;
+        margin-left: -5%;
+        margin-top: -10%;
+        font-size: 40px;
+    }
+    .EducPage a{
+        background-color: transparent;
+        font-size: 30px;
+    }
+
+    .EducPage ul{
+        background-color: transparent;
+        margin-left: -5%;
+        width: fit-content;
+    }
+
+    .EducPage ul li{
+        padding: 10px 10px 10px 10px;
+        color: white;
+        font-size: 25px;
+        list-style: none;
+    }
+    .cAlogo, .dLslogo, .dlslogo{
+        display: none;
+    }
+
+    /* -----------REFERENCE PAGE------------ */
+    .REF{
+        margin-left: 5%;
+        background-color: transparent;
+        text-align: left;
+        padding: 2px 10px 2px 10px;
+        color: #ffffff;
+
+    }
+    .REF h1{
+        background-color: transparent;
+        margin-top: 5%;
+        color: #38b6ff;
+        font-size: 40px;
+    }
+    .REF a{
+        margin-top: -10%;
+        text-align: left;
+        font-size: 30px;
+    }
+    .REF ul li{
+        font-size: 25px;
+        color: white;
+    }
+    /* ---------END OF TABLET VIEW CSS STYLE-------- */
+}
+
+/* ---------------CSS STYE FOR LAPTOP VIEW----------- */
+@media only screen and (min-width: 1024px){ 
+
+    /* ---------------NAV BAR------------- */
+
+    .heaDer nav ul li a{
+        font-size: 17px;
+    }
+    .socMed{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+    }
+
+    /* ------------------HOMEPAGE-------------- */
+
+    .cntnt {
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+
+    .cntnt h1, .cntnt h1 span{
+        font-size: 50px;
+    }
+
+    .cntnt a{
+        margin-left: -10%;
+        font-weight: bold;
+        color: #f3c806; 
+        padding: 5px 5px;
+        border-style: double;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius:5px;
+    }
+
+    .Hpage ul{
+        margin-top: -10%;
+        margin-left: -45%;
+    }
+
+    /* ------------My Picture------- */
+    .pic {
+        margin-top: -18%;
+        margin-right: -55%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px 3px 80px 3px;
+        background-color: transparent;
+    }
+
+    .pic img {
+        width: 80%;
+        height: 80%;
+        border-radius: 50px;
+    }
+
+    .Hpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+    }
+
+    /* ----------ABOUT ME PAGE------------- */
+
+    .aBoutPage {
+        background: #000000;
+        padding: 20px;
+        margin-top: -10%;
+    } 
+    
+     .aBoutPage h1 {
+        background-color: transparent;
+        text-align: left;
+        font-size: 30px;
+        color:  #38b6ff; 
+        font-weight: bold;
+        margin-bottom: 20px; 
+    }
+    
+    .aBoutPage p{
+        width: 45%;
+        padding: 5px 10px 5px 10px;
+        margin-left: 2%;
+        background:transparent;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        text-align: justify;
+        font-size: 25px;
+        color: #fff; 
+    }
+    .TechSkills ul li, .ProfSkills ul li{
+        background-color: transparent;
+        list-style:none;
+        color: #ffffff; 
+        font-size: 20px;
+       
+    }
+    .TechSkills, .ProfSkills{
+        background-color: transparent;
+        color:  #38b6ff;
+    }
+    .TechSkills ul, .ProfSkills ul{
+        width: fit-content;
+        padding: 1%;
+        margin-left: 2%;
+        background-color: transparent;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+/* -------------ROTATING PICTURES---------- */
+    .pRoglAngpIc {
+        margin-left: 60%;
+        margin-top: -30%;
+        display: flex;
+        width: 250px;
+        height: 125px;
+        background-color: transparent;
+        padding-top: 32px;
+        transform-style: preserve-3d;
+        animation: animate 30s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    }
+    
+    .pRoglAngpIc span{
+        background-color: transparent;
+    }
+    
+    .pRoglAngpIc img{
+        background-color: transparent;
+    }
+    
+     @keyframes animate{   /*-- animimation movement -- */
+        0%{
+            transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+        }
+        100%{
+            transform: perspective(1000px) rotateX(360deg) rotateY(45deg);
+        }
+    }
+    
+    .pRoglAngpIc span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateX(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+    
+    .pRoglAngpIc span img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+        ;object-fit: cover;
+    }
+    /* ------- END OF ABOUT PAGE------- */
+    
+    /* ------EDUCATION PAGE------ */
+       .EducPage{
+        margin-top: 30%;
+        margin-left: 20%;
+        text-align: left;
+        padding: 5px 10px 5px 10px;
+        color:  #38b6ff;
+    }
+    
+    .EducPage h1{
+        font-size: 35px;
+    }
+    .EducPage a{
+        font-size: 30px;
+    }
+    
+    .EducPage ul{
+        text-align: left;
+        background-color: transparent;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .EducPage ul li{
+        width: fit-content;
+        margin-left: 15%;
+        padding: 5px 5px 5px 5px;
+        color: white;
+        font-size: 17px;
+        list-style: none;
+    }
+
+    .cAlogo img {
+        width: 20%;
+        height: 20%;
+        background: transparent;
+    }
+    .cAlogo, .dLslogo, .dlslogo{
+        display: flex;
+    }
+
+    .dlslogo img{
+        width: 30%;
+        height: 30%;
+    }
+
+    .cAlogo{
+        margin-top:-45%;
+        margin-left:30% ;
+    }
+    .dlslogo{
+        margin-top: 0%;
+        margin-left: 45%;
+    }
+    .dLslogo{
+        margin-left: 43%;
+    }
+
+    
+    
+    /* -----------REFERENCE PAGE------------ */
+    .REF{
+        margin-top: -20%;
+        margin-left: 10%;
+        padding: 5px 5px 5px 5px;
+        color: #ffffff;
+    }
+    .REF h1{
+        margin-left:0%;
+        color: #38b6ff;
+        font-size: 30px;
+    }
+    .REF a{
+        margin-left: 0%;
+        font-size: 25px;
+    }
+    .REF ul li{
+        margin-left:0%;
+        font-size: 20px;
+        color: white;
+    }
+}
